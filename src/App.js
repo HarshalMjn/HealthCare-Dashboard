@@ -1,21 +1,25 @@
-
+import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import "./tailwind.css"
+import Navbar from './components/Navbar'; // Ensure Navbar is correctly imported
 import Search from './components/Search';
+import ProfileCard from './components/ProfileCard';
+import DiagnosisHistroy from './components/DiagnosisHistroy';
 
-import './tailwind.css'; 
+
+
 
 function App() {
   return (
     <div className="App">
-     <Navbar/>
-     <Search/>
-     
-     
-     
-     
-     
-  
+      <Navbar/>
+      <div className="flex justify-center items-start ">
+        <Search />
+        <DiagnosisHistroy/>
+        <ProfileCard  />
+      
+      </div>
+
     </div>
   );
 }
