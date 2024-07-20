@@ -4,7 +4,7 @@ import { BsGenderFemale } from "react-icons/bs";
 import { AiOutlineSafety } from "react-icons/ai";
 import fetchPatientData from '../utils/api';
 
-const ProfileCard = () => {
+const ProfileCard = ({ className }) => {
     const [patient, setPatient] = useState(null);
 
     useEffect(() => {
@@ -25,9 +25,9 @@ const ProfileCard = () => {
     }
 
     return (
-        <div className="w-[340px] mr-3 mt-5 mx-auto bg-white-1 shadow-lg rounded-3xl">
-            <div className="flex items-center justify-center mt-5">
-                <img className="w-40 h-40 rounded-full" src={patient.profile_picture} alt={patient.name} />
+        <div className="w-[340px] font-manrope  bg-white-1 shadow-lg rounded-3xl mt-8">
+            <div className="flex items-center justify-center ">
+                <img className="w-40 h-40 rounded-full mt-7" src={patient.profile_picture} alt={patient.name} />
             </div>
             <div className="p-8">
                 <h2 className="text-center text-xl font-bold text-blue-900">{patient.name}</h2>

@@ -14,8 +14,8 @@ const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="relative">
-      <nav className="flex m-2 items-center justify-between bg-white shadow p-4 rounded-full">
+    <div className="relative font-manrope">
+      <nav className="flex m-2 items-center justify-between bg-white shadow p-3 rounded-full">
         <div className="flex items-center  space-x-4">
           <img src={logo} alt="Logo"  className='w-15 h-15' />
         </div>

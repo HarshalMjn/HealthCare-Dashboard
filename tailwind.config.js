@@ -38,11 +38,20 @@ module.exports = {
        
 
       },
-      line:"#CBC8D4"
+      line:"#CBC8D4",
+      
+     
+
       
 
     
-    }
+    },
+    fontFamily: {
+      'manrope': ['Manrope', 'sans-serif'],
+    },
+    letterSpacing: {
+      'custom-spacing': '0px',
+    },
   },
   plugins: [],
 }

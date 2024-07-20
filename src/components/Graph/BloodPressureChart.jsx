@@ -108,12 +108,12 @@ const BloodPressureChart = () => {
     useEffect(() => {
         if (chartContainerRef.current) {
             chartContainerRef.current.style.height = '298px'; // Adjust the height as needed
-            chartContainerRef.current.style.width = '726px'; // Adjust the width as needed
+            chartContainerRef.current.style.width = '600px'; // Adjust the width as needed
         }
     }, [chartData]);
 
     return (
-        <div className='bg-pink-100 p-4 '>
+        <div className='bg-pink-100 p '>
             <p className='font-semibold text-xl mb-1 ml-6 mt-6 text-textblack-1 inline'>Blood Pressure
             
             <span className='ml-44 font-thin text-sm '>Last 6 months </span>
@@ -132,7 +132,7 @@ const BloodPressureChart = () => {
                      
                 </div>
               
-                <div className='w-1/4 flex flex-col justify-center  -ml-5 -mt-20 space-y-4  '>
+                <div className='w-1/4 flex flex-col justify-center  -ml-5 -mt-1 space-y-4  '>
                     <div>
                         <div className="flex items-center mb-2">
                             <div className="w-3 h-3 bg-pink-500 rounded-full mr-2"></div>

@@ -36,7 +36,7 @@ const Search = () => {
         </div>
       </div>
 
-      <div className="overflow-y-scroll custom-scrollbar" style={{ maxHeight: '75vh' }}>
+      <div className="overflow-y-scroll custom-scrollbar" style={{ maxHeight: '150vh' }}>
         {patientData ? (
           patientData.map((patient, index) => (
             <div
